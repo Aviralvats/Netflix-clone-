@@ -1,1 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.header {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('images/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.nav-buttons .btn {
+    background: #e50914;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.button {
+    background: #e50914;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.row {
+margin: 50px 70px;
+}
+
+.row h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.posters {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.posters img {
+    height: 200px;
+    width: 140px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.posters img:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    text-align: center;
+    padding: 40px;
+    border-top: 1px solid #333;
+    color: #999;
+}
+
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2rem; }
+    .row { margin: 30px 20px; }
+    .nav { padding: 15px 20px; }
+}
